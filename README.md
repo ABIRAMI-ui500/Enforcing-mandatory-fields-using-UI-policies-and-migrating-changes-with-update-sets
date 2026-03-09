@@ -1,25 +1,45 @@
 # Enforcing-mandatory-fields-using-UI-policies-and-migrating-changes-with-update-sets
 
-## Project Description
-This project explains how to automate employee incident management using the ServiceNow platform. 
-It helps organizations to manage employee issues and incidents efficiently by creating, tracking, and resolving incidents through an automated workflow.
+1. Creating UI Policy
 
-## Features
-- Create Incident
-- Assign Incident to Manager
-- Track Incident Status
-- Email Notification for Assignment
+Log in to the ServiceNow instance.
 
-## Tools Used
-- ServiceNow
-- GitHub
+Navigate to System UI → UI Policies.
 
-## Steps Involved
-1. Create Incident Table
-2. Configure Incident Form
-3. Add Fields (Assignment Manager, Assignment Email)
-4. Automate Incident Process
-5. Upload Project to GitHub
+Click New.
 
-## Conclusion
-This project improves incident management by automating the process and making it easier to track and resolve employee issues.
+Select the required table (e.g., Incident).
+
+Define the condition for the UI Policy.
+
+Save the UI Policy.
+
+2. Creating UI Policy Actions
+
+Open the created UI Policy.
+
+Add UI Policy Actions.
+
+Select the field that should be mandatory.
+
+Enable the Mandatory option.
+
+3. Creating Update Set
+
+Navigate to System Update Sets → Local Update Sets.
+
+Click New and create an Update Set.
+
+Set the created Update Set as Current.
+
+4. Capturing Changes
+
+All the UI Policy configurations will automatically be captured in the active Update Set.
+
+5. Migrating Changes
+
+Export the Update Set as an XML file.
+
+Import it into another ServiceNow instance.
+
+Preview and commit the Update Set.
