@@ -1,5 +1,4 @@
 # Enforcing-mandatory-fields-using-UI-policies-and-migrating-changes-with-update-sets
-# Automating Employee Incident Management using ServiceNow
 
 ## Project Description
 This project explains how to automate employee incident management using the ServiceNow platform. 
